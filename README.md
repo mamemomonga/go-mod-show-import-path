@@ -5,23 +5,24 @@ This is useful when using a package you created yourself.
 
 # INSTALL
 
+	$ go get -u -v github.com/mamemomonga/go-mod-show-import-path
 	$ go install github.com/mamemomonga/go-mod-show-import-path
 
 # USAGE
 
 	$ go mod init github.com/mamemomonga/hoge01
-	$ goimportabs .
+	$ go-mod-show-import-path .
 	github.com/mamemomonga/hoge01
 
 	$ mkdir -p hoge/moge
 	$ cd hoge/moge
-	$ goimportabs .
+	$ go-mod-show-import-path .
 	github.com/mamemomonga/hoge01/hoge/moge
 
-	$ goimportabs ../..
+	$ go-mod-show-import-path ../..
 	github.com/mamemomonga/hoge01
 
-	$ goimportabs ../tada
+	$ go-mod-show-import-path ../tada
 	github.com/mamemomonga/hoge01/hoge/tada
 
 # LICENSE
