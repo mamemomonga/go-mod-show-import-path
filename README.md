@@ -24,7 +24,7 @@ This is useful when using a package you created yourself.
 	$ goimportabs ../tada
 	github.com/mamemomonga/hoge01/hoge/tada
 
-# License
+# LICENSE
 
 MIT
 
